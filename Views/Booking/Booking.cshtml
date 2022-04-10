@@ -1,0 +1,50 @@
+@model DentistApp.Models.Appointment;
+
+@{
+    ViewData["Title"] = "Booking-Appointment";
+}
+
+
+<div class="aboutbg">
+        <h1 class="text-center font-serif text-3xl md:text-4xl pb-4 text-white">Book Appointment</h1>
+    </div>
+    <div class="container mx-auto max-w-3xl py-20 px-8">
+        <form method="post" >
+            <div class="text-red-500" asp-validation-summary="ModelOnly"></div>
+            <div class="py-2 grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="flex flex-col">
+                    <label asp-for="Name"></label>
+                    <input asp-for="Name" type="text" class="w-full py-2 px-3 border-2 border-gray-700" />
+                    <span asp-validation-for="Name" class="text-red-600"></span>
+                </div>
+                <div class="flex flex-col">
+                    <label asp-for="Email"></label>
+                    <input asp-for="Email" type="text" class="py-2 px-3 border-2 border-gray-700"/>
+                    <span asp-validation-for="Email" class="text-red-600"></span>
+                </div>
+            </div>
+            <div class="py-2 grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="flex flex-col">
+                    <label asp-for="Age"></label>
+                    <input asp-for="Age" type="number" class="py-2 px-3 border-2 border-gray-700 w-full" />
+                    <span asp-validation-for="Age" class="text-red-600"></span>
+                </div>
+                <div class="flex flex-col">
+                    <label asp-for="Date"></label>
+                    <input asp-for="Date" type="date" class="py-2 px-3 border-2 border-gray-700 w-full"/>
+                    <span asp-validation-for="Date" class="text-red-600"></span>
+                </div>
+            </div>
+            <div class="">
+                <label asp-for="Issue"></label>
+                  @* <input asp-for="Issue" type="Issue" class="py-2 px-3 border-2 border-gray-700 w-full"/> *@
+                <textarea asp-for="Issue" cols="30" rows="5" class="py-2 px-3 border-2 border-gray-700 w-full"></textarea>
+                <span asp-validation-for="Issue" class="text-red-600"></span>
+            </div>
+            <button type="submit" class="py-2 md:py-3 px-20 bg-red-600 text-white">Booking</button>
+        </form>
+    </div>
+
+@section Scripts{
+    @{ <partial name="_ValidationScriptsPartial" /> }
+}

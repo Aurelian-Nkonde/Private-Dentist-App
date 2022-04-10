@@ -1,0 +1,58 @@
+@model IEnumerable<DentistApp.Models.Appointment>
+
+
+@{
+    ViewData["Title"] = "Appointments-Dashboard";
+}
+
+
+<div class="container mx-auto max-w-4xl py-20 px-8">
+        <h1 class="font-serif text-3xl md:text-4xl pb-4 pb-10">Dr Chung Admin</h1>
+        <div class="pb-20">
+            <h1 class="font-serif text-2xl pb-4 pb-2">10 <span class="underline">Appointments</span></h1>
+            <h1 class="font-serif text-2xl pb-4 pb-10 underline">
+                <a asp-controller="DashBlog" asp-action="Dashboard">Blogs Management</a>
+            </h1>
+        </div>
+
+        <h1 class="font-serif text-2xl pb-4 pb-10 underline">List of Appointments</h1>
+
+        @if (Model.Count() >= 1)
+        {
+            <table class="table w-full">
+                <thead>
+                    <tr>
+                        <th class="px-4 py-2 text-xl"></th>
+                        <th class="px-4 py-2 text-xl">Id</th>
+                        <th class="px-4 py-2 text-xl">Name</th>
+                        <th class="px-4 py-2 text-xl">Email</th>
+                        <th class="px-4 py-2 text-xl"></th>
+                        <th class="px-4 py-2 text-xl"></th>
+                    </tr>
+                </thead>
+                <tbody class="overflow-hidden">
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td class="border px-4 py-2">
+                            <a asp-action="DetailBooking" asp-route-Id="@item.Id" class="underline text-lg">0</a>
+                        </td>
+                        <td class="border px-4 py-2">@item.Id</td>
+                        <td class="border px-4 py-2">@item.Name</td>
+                        <td class="border px-4 py-2">@item.Email</td>
+                        <td class="border px-4 py-2">
+                            <a asp-action="UpdateBooking" asp-route-Id="@item.Id"  class="underline text-lg">edit</a>
+                        </td>
+                        <td class="border px-4 py-2">
+                            <a asp-action="DeleteBooking" asp-route-Id="@item.Id" class="underline text-lg">delete</a>
+                        </td>
+                    </tr>    
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+           <h1 class="font-serif text-2xl pb-4 pb-10 underline text-center text-red-600">No Appointments</h1> 
+        }
+    </div>

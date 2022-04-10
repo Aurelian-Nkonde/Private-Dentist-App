@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Dentist</title>
+    <link rel="stylesheet" href="~/css/tailwind.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+    <!-- navigation -->
+    <div class="bg-white">
+            <div class=" px-6 container mx-auto py-6">
+                <!-- top tier -->
+                <div class="grid grid-cols-4">
+                    <div class="text-center">
+                        <h1 class="font-sans text-3xl font-bold text-blue-600">Dr_Chung</h1>
+                    </div>
+                    <div class="hidden lg:flex font-serif flex-col justify-center items-center">
+                        <p>223 Harare Street</p>
+                        <p>333 Kadoma, Ngezi</p>
+                    </div>
+                    <div class="hidden lg:block text-center">
+                        <p class="font-serif text-lg mr-8 leading-2 transition ease-in-out duration-150 hover:text-red-600 cursor-pointer">drChung@gmail.com</p>
+                    </div>
+                    <div class="hidden lg:block text-center">
+                        <p class="font-serif text-lg mr-8 leading-2 transition ease-in-out duration-150 hover:text-red-600 cursor-pointer">+23 343 552 456</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-200">
+        <div class="container py-6 mx-auto px-6 lg:px-0">
+            <!-- bottom tier -->
+            <div class="flex items-center justify-around">
+                <a asp-controller="Booking" asp-action="Booking" class="bg-red-600 py-2 px-6 md:px-10 text-lg font-serif text-white">Make Appointment</a>
+                <ul class="hidden  lg:flex items-center">
+                    <li class="font-serif text-xl mr-8 leading-2 font-bold transition ease-in-out duration-150 hover:text-blue-600 cursor-pointer">
+                        <a asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="font-serif text-xl mr-8 leading-2 font-bold transition ease-in-out duration-150 hover:text-blue-600 cursor-pointer">
+                        <a asp-controller="Home" asp-action="Gallery">Gallery</a>
+                    </li>
+                    <li class="font-serif text-xl mr-8 leading-2 font-bold transition ease-in-out duration-150 hover:text-blue-600 cursor-pointer">
+                        <a asp-controller="Home" asp-action="Contact">Contact</a>
+                    </li>
+                    <li class="font-serif text-xl mr-8 leading-2 font-bold transition ease-in-out duration-150 hover:text-blue-600 cursor-pointer">
+                        <a asp-controller="Home" asp-action="About">About</a>
+                    </li>
+                    <li class="font-serif text-xl mr-10 leading-2 font-bold transition ease-in-out duration-150 hover:text-blue-600 cursor-pointer">
+                        <a asp-controller="Blog" asp-action="BlogList">Blog</a>
+                    </li>
+                    <a asp-controller="Appointment" asp-action="Main">0</a>
+                </ul>
+                <ul id="btn" class="lg:hidden">
+                    <li class="bg-black h-1 w-10 my-1 cursor-pointer"></li>
+                    <li class="bg-black h-1 w-10 my-1 cursor-pointer"></li>
+                    <li class="bg-black h-1 w-10 my-1 cursor-pointer"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <div id="nav" class="hidden md:hidden">
+        <div class="container mx-auto max-4xl py-12 px-8">
+            <ul class="flex flex-col items-center">
+                <li class="font-serif text-xl py-3 mr-8 leading-2 font-bold transition ease-in-out duration-150 hover:text-blue-600 cursor-pointer">
+                    <a asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li class="font-serif text-xl py-3 mr-8 leading-2 font-bold transition ease-in-out duration-150 hover:text-blue-600 cursor-pointer">
+                    <a asp-controller="Home" asp-action="Gallery">Gallery</a>
+                </li>
+                <li class="font-serif text-xl py-3 mr-8 leading-2 font-bold transition ease-in-out duration-150 hover:text-blue-600 cursor-pointer">
+                    <a asp-controller="Home" asp-action="Contact">Contact</a>
+                </li>
+                <li class="font-serif text-xl py-3 mr-8 leading-2 font-bold transition ease-in-out duration-150 hover:text-blue-600 cursor-pointer">
+                    <a asp-controller="Home" asp-action="About">About</a>
+                </li>
+                <li class="font-serif text-xl py-3 mr-10 leading-2 font-bold transition ease-in-out duration-150 hover:text-blue-600 cursor-pointer">
+                    <a asp-controller="Blog" asp-action="BlogList">Blog</a>
+                </li>
+                <div class="text-center">
+                    <a asp-controller="Appointment" asp-action="Main">0</a>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+
+    <div >
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+        <!-- FOOTER -->
+    <div class="bg-blue-900">
+        <div class="container mx-auto max-w-4xl py-28">
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="text-xl text-white font-serif">&copy; 2022</h1>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        let btn = document.getElementById("btn")
+        let nav = document.getElementById("nav")
+
+        btn.addEventListener("click", () => {
+            nav.classList.toggle("hidden")
+        })
+
+    </script>
+    @* <script src="~/js/site.js" asp-append-version="true"></script> *@
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

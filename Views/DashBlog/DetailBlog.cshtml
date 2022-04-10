@@ -1,0 +1,35 @@
+@model DentistApp.Models.Blog;
+
+
+@{
+    ViewData["Title"] = "Detail-Blog";
+}
+
+
+<div class="container mx-auto max-w-3xl py-20 px-8">
+    <h1 class="font-serif text-3xl md:text-4xl pb-4">Blog Post Detail</h1>
+    <h1 class="font-serif text-xl pb-4 underline">
+        <a asp-controller="Dashblog" asp-action="Dashboard">Return to Home</a>
+    </h1>
+    <div class="container mx-auto max-w-3xl">
+    <form class="mx-auto">
+        <div class="py-2">
+            <div class="flex flex-col">
+                <label  asp-for="Title"></label>
+                <input asp-for="Title" disabled type="text" class="py-2 px-3 border-2 border-gray-700"/>
+            </div>
+        </div>
+        <div class="py-2">
+            <div class="flex flex-col">
+                <label asp-for="Date"></label>
+                <input asp-for="Date" disabled type="datetime" class="py-2 px-3 border-2 border-gray-700 w-full"/>
+            </div>
+        </div>
+        <div class="">
+            <label asp-for="Para"></label>
+            <textarea asp-for="Para" disabled name="" id="" cols="30" rows="10" class="py-2 px-3 border-2 border-gray-700 w-full"></textarea>
+        </div>
+    </form>
+    </div>
+
+</div>

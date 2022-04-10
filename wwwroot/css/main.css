@@ -1,0 +1,63 @@
+.showcasing{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(rgba(71, 131, 157, 0.918), rgba(127, 215, 227, 0.843)), url(/imgs/two.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.banner{
+    height: 50vh;
+    background: linear-gradient(rgba(71, 131, 157, 0.918), rgba(127, 215, 227, 0.843)), url(/imgs/three.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.aboutbg{
+    height: 30vh;
+    background: linear-gradient(rgba(71, 131, 157, 0.918), rgba(127, 215, 227, 0.843)), url(/imgs/three.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.gallerybg{
+    height: 30vh;
+    background: linear-gradient(rgba(71, 131, 157, 0.918), rgba(127, 215, 227, 0.843)), url(/imgs/three.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.contactbg{
+    height: 30vh;
+    background: linear-gradient(rgba(71, 131, 157, 0.918), rgba(127, 215, 227, 0.843)), url(/imgs/three.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.w{
+    width: 100%;
+}

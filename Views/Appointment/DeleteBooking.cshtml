@@ -1,0 +1,27 @@
+@model DentistApp.Models.Appointment;
+
+@{
+    ViewData["Title"] = "Delete-Booking";
+}
+
+
+<div class="container mx-auto max-w-3xl py-20 px-8">
+    <h1 class="font-serif text-3xl md:text-4xl pb-4">Delete Booking</h1>
+    <h1 class="font-serif text-xl pb-4 underline">
+        <a asp-controller="Appointment" asp-action="Main">Return to Home</a>
+    </h1>
+    <div class="container mx-auto max-w-3xl ">
+
+
+
+    <form asp-action="DeleteBookings" method="post" class="mx-auto">
+        <input asp-for="Id" class="hidden"/>
+        <button type="submit" class="font-serif text-xl pb-4 underline text-red-600">Delete</button>
+        @* <h1 class="font-serif text-xl pb-4 underline text-red-600">Delete</h1> *@
+    </form>
+    <h1 class="font-serif text-xl pb-4 text-blue-600 underline">
+        <a asp-controller="Appointment" asp-action="Main">Cancel Delete</a>
+    </h1>
+</div>
+
+</div>

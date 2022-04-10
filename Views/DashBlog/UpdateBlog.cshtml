@@ -1,0 +1,42 @@
+@model DentistApp.Models.Blog;
+
+@{
+    ViewData["Title"] = "Update-Blog";
+}
+
+ <div class="container mx-auto max-w-3xl py-20 px-8">
+       <h1 class="font-serif text-3xl md:text-4xl pb-4">Update Blog Post</h1>
+       <h1 class="font-serif text-xl pb-4 underline">
+           <a asp-controller="Dashblog" asp-action="Dashboard">Return to Home</a>
+       </h1>
+       <div class="container mx-auto max-w-3xl">
+        <form asp-action="UpdateBlog" method="post" class="mx-auto">
+            <div class="text-red-600" asp-validation-summary="ModelOnly"></div>
+            <div class="py-2">
+                <div class="flex flex-col">
+                    <label asp-for="Title"></label>
+                    <input asp-for="Title" type="text" class="py-2 px-3 border-2 border-gray-700"/>
+                    <span asp-validation-for="Title" class="text-red-600"></span>
+                </div>
+            </div>
+            <div class="py-2">
+                <div class="flex flex-col">
+                    <label asp-for="Date"></label>
+                    <input asp-for="Date" type="datetime" class="py-2 px-3 border-2 border-gray-700 w-full"/>
+                    <span asp-validation-for="Date" class="text-red-600"></span>
+                </div>
+            </div>
+            <div class="">
+                <label asp-for="Para"></label>
+              <textarea asp-for="Para" cols="30" rows="5" class="py-2 px-3 border-2 border-gray-700 w-full"></textarea>
+                <span asp-validation-for="Para" class="text-red-600"></span>
+            </div>
+            <button type="submit" class="py-2 md:py-3 px-20 bg-red-600 text-white">Update Post</button>
+        </form>
+    </div>
+
+    </div>
+
+@section Scripts{
+    @{ <partial name="_ValidationScriptsPartial" /> }
+}

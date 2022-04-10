@@ -1,0 +1,60 @@
+@model IEnumerable<DentistApp.Models.Blog>
+
+@{
+    ViewData["Title"] = "Blog-Dashboard";
+}
+
+
+<div class="container mx-auto max-w-4xl py-20 px-8">
+        <h1 class="font-serif text-3xl md:text-4xl pb-4 pb-10">Dr Chung Admin</h1>
+        <div class="pb-20">
+            <div class="pb-3">
+                <a asp-controller="Dashblog" asp-action="CreateBlog" class="font-seriftext-2xl underline">Create a Blog</a>
+            </div>
+            <h1 class="font-serif text-2xl pb-4  underline">
+                <a asp-controller="Appointment" asp-action="Main">Appointments</a>
+            </h1>
+            
+        </div>
+
+        <h1 class="font-serif text-2xl pb-4 pb-10 underline">List of Blog Posts</h1>
+        <div class="">
+
+            @if (Model.Count() >= 1)
+            {
+                <table class="table w-full">
+                    <thead>
+                        <tr>
+                            <th class="px-4 py-2 text-xl"></th>
+                            <th class="px-4 py-2 text-xl">Posts</th>
+                            <th class="px-4 py-2 text-xl"></th>
+                            <th class="px-4 py-2 text-xl"></th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="overflow-hidden">
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="border px-4 py-2">
+                                    <a asp-route-Id="@item.Id" asp-action="DetailBlog"  class="underline text-lg">0</a>
+                                </td>
+                                <td class="border px-4 py-2">@item.Title</td>
+                                <td class="border px-4 py-2">
+                                    <a asp-route-Id="@item.Id" asp-action="UpdateBlog"  class="underline text-lg">edit</a>
+                                </td>
+                                <td class="border px-4 py-2">
+                                    <a asp-route-Id="@item.Id" asp-action="DeleteBlog" class="underline text-lg">delete</a>
+                                </td>
+                            </tr>   
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                 <h1 class="font-serif text-2xl pb-4 pb-10 text-red-600 text-center underline">Oop No Posts</h1>
+            }
+
+        </div>
+    </div>

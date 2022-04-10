@@ -1,0 +1,36 @@
+@model IEnumerable<DentistApp.Models.Blog>
+
+
+@{
+    ViewData["Title"] = "Blogs-Lists";
+}
+
+ <div class="aboutbg px-8">
+        <h1 class="text-center font-serif text-3xl md:text-4xl pb-4 text-white">Blog's</h1>
+    </div>
+    <div class="container mx-auto max-w-4xl py-20 px-8">
+        <h1 class="font-serif text-3xl md:text-4xl pb-4  pb-10">Blog Posts</h1>
+
+        @if(Model.Count() >= 1)
+        {
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            @foreach (var item in Model)
+            {
+            <div class="mb-7">
+                <img src="/imgs/one.jpg" alt="">
+                <div class="transition ease-in-out duration-150 hover:shadow-xl flex flex-col py-9 px-2 overflow-hidden">
+                    <h1 class="font-serif text-xl pb-2">@item.Title</h1>
+                    <p class="font-serif text-md font-bold pb-3">@item.Date</p>
+                    <div class="">
+                        <a asp-route-Id="@item.Id" asp-action="BlogDetail" class="bg-black py-2 px-10 text-white">Read More</a>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+        }
+        else
+        {
+            <h1 class="font-serif text-3xl md:text-4xl pb-4 text-center text-red-500 pb-10">No Blog Posts</h1>
+        }
+    </div>

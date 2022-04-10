@@ -1,0 +1,41 @@
+@model DentistApp.Models.Appointment;
+
+@{
+    ViewData["Title"] = "Booking-Details";
+}
+
+
+<div class="aboutbg px-8">
+        <h1 class="text-center font-serif text-3xl md:text-4xl pb-4 text-white">Booking Details</h1>
+    </div>
+    <div class="container mx-auto max-w-3xl py-20 px-8">
+        <h1 class="font-serif text-xl pb-4 underline">
+            <a asp-controller="Appointment" asp-action="Main">Return to Home</a>
+        </h1>
+        <form class="mx-auto">
+            <div class="py-2 grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="flex flex-col">
+                    <label asp-for="Name"></label>
+                    <input asp-for="Name" disabled type="text" class="w-full py-2 px-3 border-2 border-gray-700" />
+                </div>
+                <div class="flex flex-col">
+                    <label asp-for="Email"></label>
+                    <input asp-for="Email" disabled type="text" class="py-2 px-3 border-2 border-gray-700"/>
+                </div>
+            </div>
+            <div class="py-2 grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="flex flex-col">
+                    <label asp-for="Age"></label>
+                    <input asp-for="Age" disabled type="number" class="py-2 px-3 border-2 border-gray-700 w-full" />
+                </div>
+                <div class="flex flex-col">
+                    <label asp-for="Date"></label>
+                    <input asp-for="Date" disabled type="datetime" class="py-2 px-3 border-2 border-gray-700 w-full"/>
+                </div>
+            </div>
+            <div class="">
+                <label asp-for="Issue"></label>
+                <textarea asp-for="Issue" disabled name="" id="" cols="30" rows="10" class="py-2 px-3 border-2 border-gray-700 w-full"></textarea>
+            </div>
+        </form>
+    </div>

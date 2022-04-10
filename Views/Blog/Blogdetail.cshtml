@@ -1,0 +1,21 @@
+@model DentistApp.Models.Blog;
+
+@{
+    ViewData["Title"] = "Blog-Detail";
+}
+
+
+<div class="container mx-auto max-w-3xl py-20 px-8">
+        <h1 class="font-serif text-xl pb-7 underline">
+           <a asp-controller="Blog" asp-action="BlogList">Return to Blogs</a>
+       </h1>
+
+    <h1 class="font-serif max-w-lg font-bold underline text-3xl md:text-4xl pb-4">@Model.Title</h1>
+    <div class="pb-4">
+        <img src="/imgs/four.jpg" alt="">
+    </div>
+    <p class="font-sans text-lg font-bold pb-7">@Model.Date</p>
+    <p class="font-sans text-lg">
+        @Model.Para
+    </p>
+</div>
