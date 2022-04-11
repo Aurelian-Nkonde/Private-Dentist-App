@@ -5,28 +5,31 @@
     ViewData["Title"] = "Log in";
 }
 
+
+
 <div class="container mx-auto max-w-sm py-28 px-8">
         <h1 class="font-serif text-3xl text-center pb-6 underline">Login</h1>
         <form  id="account" method="post">
             <div asp-validation-summary="ModelOnly" class="text-red-700"></div>
             <div class="py-2">
                 <label asp-for="Input.Email"></label>
-                <input asp-for="Input.Email" class="form-control" />
-                <span asp-validation-for="Input.Email" class="w-full py-2 px-4 border-2 border-gray-400"></span>
+                <input asp-for="Input.Email"  class="w-full py-2 px-4 border-2 border-gray-400" />
+                <span asp-validation-for="Input.Email" class="text-red-700"></span>
             </div>
             <div class="py-2">
                 <label asp-for="Input.Password"></label>
-                <input asp-for="Input.Password" class="form-control" />
-                <span asp-validation-for="Input.Password" class="w-full py-2 px-4 border-2 border-gray-400"></span>
+                <input asp-for="Input.Password" class="w-full py-2 px-4 border-2 border-gray-400"/>
+                <span asp-validation-for="Input.Password" class="text-red-700"></span>
             </div>
             <button type="submit" class="bg-red-500 py-2 w-full text-white font-serif text-xl">Login</button>
         </form>
         <p class="font-serif text-center py-4">Or</p>
         <div class="">
-            <a asp-action="Identity/Register" class="font-serif text-xl flex flex-col text-center pb-6 underline">Signup</a>
+            <a href="Register" class="font-serif text-xl flex flex-col text-center pb-6 underline">Signup</a>
         </div>
     </div>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+
