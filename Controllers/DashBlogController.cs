@@ -12,19 +12,19 @@ namespace DentistApp.Controllers
 {
     public class DashBlogController : Controller
 {
-    private readonly ApplicationDbContext _db;
+    private readonly ApplicationDbContext _database;
 
-    public DashBlogController(ApplicationDbContext db)
+    public DashBlogController(ApplicationDbContext database)
     {
-        _db = db;
+        _database = database;
     }
 
 
     [Authorize]
     public IActionResult Dashboard()
     {
-        IEnumerable<Blog> blogs = _db.blogs;
-        return View(blogs);
+        IEnumerable<Blog> AllblogsPosts = _database.blogs;
+        return View(AllblogsPosts);
     }
 
 
@@ -43,8 +43,8 @@ namespace DentistApp.Controllers
     {
         if (ModelState.IsValid)
         {
-            _db.blogs.Add(data);
-            _db.SaveChanges();
+            _database.blogs.Add(data);
+            _database.SaveChanges();
             return RedirectToAction("Dashboard");
         }
         return View(data);
@@ -58,12 +58,12 @@ namespace DentistApp.Controllers
         {
             return NotFound();
         }
-        var blog = _db.blogs.Find(id);
-        if (blog == null)
+        var blogPost = _database.blogs.Find(id);
+        if (blogPost == null)
         {
             return NotFound();
         }
-        return View(blog);
+        return View(blogPost);
     }
 
     [Authorize]
@@ -74,11 +74,11 @@ namespace DentistApp.Controllers
         {
             return NotFound();
         }
-        var blogToDelete = _db.blogs.Find(id);
+        var blogToDelete = _database.blogs.Find(id);
         if (blogToDelete != null)
         {
-            _db.blogs.Remove(blogToDelete);
-            _db.SaveChanges();
+            _database.blogs.Remove(blogToDelete);
+            _database.SaveChanges();
             return RedirectToAction("Dashboard");
         }
         return View(blogToDelete);
@@ -92,12 +92,12 @@ namespace DentistApp.Controllers
         {
             return NotFound();
         }
-        var blog = _db.blogs.Find(id);
-        if (blog == null)
+        var blogPost = _database.blogs.Find(id);
+        if (blogPost == null)
         {
             return NotFound();
         }
-        return View(blog);
+        return View(blogPost);
     }
 
     [Authorize]
@@ -108,12 +108,19 @@ namespace DentistApp.Controllers
         {
             return NotFound();
         }
-        var blog = _db.blogs.Find(id);
-        if (blog == null)
+        var FindingAblog = _database.blogs.Find(id);
+        Blog blogPost;
+        if (FindingAblog != null)
         {
-            return NotFound();
+            blogPost = FindingAblog;
+            if (blogPost == null)
+            {
+                return NotFound();
+            }
+            return View(blogPost);
         }
-        return View(blog);
+
+        return View(FindingAblog);
     }
 
 
@@ -124,8 +131,8 @@ namespace DentistApp.Controllers
     {
         if (ModelState.IsValid)
         {
-            _db.blogs.Update(data);
-            _db.SaveChanges();
+            _database.blogs.Update(data);
+            _database.SaveChanges();
             return RedirectToAction("Dashboard");
         }
         return View(data);

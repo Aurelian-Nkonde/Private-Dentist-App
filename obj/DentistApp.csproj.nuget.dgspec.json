@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\DentistApp.csproj": {}
+    "C:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\DentistApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\DentistApp.csproj": {
+    "C:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\DentistApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\DentistApp.csproj",
+        "projectUniqueName": "C:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\DentistApp.csproj",
         "projectName": "DentistApp",
-        "projectPath": "C:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\DentistApp.csproj",
+        "projectPath": "C:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\DentistApp.csproj",
         "packagesPath": "C:\\Users\\Aconte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\obj\\",
+        "outputPath": "C:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aconte\\AppData\\Roaming\\NuGet\\NuGet.Config",

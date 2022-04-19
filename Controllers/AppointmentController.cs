@@ -34,12 +34,12 @@ namespace DentistApp.Controllers
         {
             return NotFound();
         }
-        var booking = _context.appointments.Find(id);
-        if (booking == null)
+        var Singlebooking = _context.appointments.Find(id);
+        if (Singlebooking == null)
         {
             return NotFound();
         }
-        return View(booking);
+        return View(Singlebooking);
     }
 
 
@@ -68,10 +68,10 @@ namespace DentistApp.Controllers
         {
             return NotFound();
         }
-        var dataToDelete = _context.appointments.Find(id);
-        if (dataToDelete != null)
+        var BookingToDelete = _context.appointments.Find(id);
+        if (BookingToDelete != null)
         {
-            _context.appointments.Remove(dataToDelete);
+            _context.appointments.Remove(BookingToDelete);
             _context.SaveChanges();
             return RedirectToAction("Main");
         }
@@ -87,12 +87,12 @@ namespace DentistApp.Controllers
         {
             return NotFound();
         }
-        var booking = _context.appointments.Find(id);
-        if (booking == null)
+        var bookingToUpdate = _context.appointments.Find(id);
+        if (bookingToUpdate == null)
         {
             return NotFound();
         }
-        return View(booking);
+        return View(bookingToUpdate);
     }
 
 

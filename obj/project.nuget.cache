@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GHmqmTjtc2knCQTolBjIT4GRCdMv2PXrJ77KNlulu1Wujtm1zmazOkHPeeAcTactsh99+Vii59Og2CFRmFQGpA==",
+  "dgSpecHash": "azaHDOf7IfjD8wwowgo6CtOuG4Zpl1WqtxekZsLW3omfsVvm5/rDQdNzoAG1IILrNOs70PiPJCtAs4nPXaJWHw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\DentistApp.csproj",
+  "projectFilePath": "C:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\DentistApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aconte\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Aconte\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.14\\microsoft.aspnetcore.cryptography.internal.5.0.14.nupkg.sha512",

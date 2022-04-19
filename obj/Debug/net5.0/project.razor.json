@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\DentistApp.csproj",
+  "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\DentistApp.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,147 +15619,147 @@
   "RootNamespace": "DentistApp",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\Booking\\Booking.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\Booking\\Booking.cshtml",
       "TargetPath": "Views\\Booking\\Booking.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\Home\\Contact.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\Home\\Contact.cshtml",
       "TargetPath": "Views\\Home\\Contact.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\Shared\\_LoginPartial.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\Shared\\_LoginPartial.cshtml",
       "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\Booking\\DoneBooking.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\Booking\\DoneBooking.cshtml",
       "TargetPath": "Views\\Booking\\DoneBooking.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\Home\\Gallery.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\Home\\Gallery.cshtml",
       "TargetPath": "Views\\Home\\Gallery.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\Appointment\\DetailBooking.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\Appointment\\DetailBooking.cshtml",
       "TargetPath": "Views\\Appointment\\DetailBooking.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\DashBlog\\CreateBlog.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\DashBlog\\CreateBlog.cshtml",
       "TargetPath": "Views\\DashBlog\\CreateBlog.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\Appointment\\UpdateBooking.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\Appointment\\UpdateBooking.cshtml",
       "TargetPath": "Views\\Appointment\\UpdateBooking.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\Appointment\\DeleteBooking.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\Appointment\\DeleteBooking.cshtml",
       "TargetPath": "Views\\Appointment\\DeleteBooking.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\DashBlog\\DetailBlog.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\DashBlog\\DetailBlog.cshtml",
       "TargetPath": "Views\\DashBlog\\DetailBlog.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\DashBlog\\UpdateBlog.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\DashBlog\\UpdateBlog.cshtml",
       "TargetPath": "Views\\DashBlog\\UpdateBlog.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\Blog\\Bloglist.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\Blog\\Bloglist.cshtml",
       "TargetPath": "Views\\Blog\\Bloglist.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\Home\\About.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\Home\\About.cshtml",
       "TargetPath": "Views\\Home\\About.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\DashBlog\\DeleteBlog.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\DashBlog\\DeleteBlog.cshtml",
       "TargetPath": "Views\\DashBlog\\DeleteBlog.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\Blog\\Blogdetail.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\Blog\\Blogdetail.cshtml",
       "TargetPath": "Views\\Blog\\Blogdetail.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\DashBlog\\Dashboard.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\DashBlog\\Dashboard.cshtml",
       "TargetPath": "Views\\DashBlog\\Dashboard.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\Appointment\\Main.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\Appointment\\Main.cshtml",
       "TargetPath": "Views\\Appointment\\Main.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\dentistapp\\Views\\Shared\\Error.cshtml",
+      "FilePath": "c:\\Users\\Aconte\\Desktop\\dot_net\\DentistApp\\DentistApp\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     }

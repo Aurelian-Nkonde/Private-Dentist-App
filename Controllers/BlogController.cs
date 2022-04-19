@@ -9,11 +9,11 @@ namespace DentistApp.Controllers
 {
     public class BlogController : Controller
 {
-    private readonly ApplicationDbContext _db;
+    private readonly ApplicationDbContext _database;
 
     public BlogController(ApplicationDbContext db)
     {
-        _db = db;
+        _database = db;
     }
 
     public IActionResult BlogDetail(int? id)
@@ -22,19 +22,19 @@ namespace DentistApp.Controllers
         {
             return NotFound();
         }
-        var blog = _db.blogs.Find(id);
-        if (blog == null)
+        var SingleblogDetail = _database.blogs.Find(id);
+        if (SingleblogDetail == null)
         {
             return NotFound();
         }
-        return View(blog);
+        return View(SingleblogDetail);
     }
 
 
     public IActionResult BlogList()
     {
-        IEnumerable<Blog> blogs = _db.blogs; 
-        return View(blogs);
+        IEnumerable<Blog> Totalblogs = _database.blogs; 
+        return View(Totalblogs);
     }
 
 
